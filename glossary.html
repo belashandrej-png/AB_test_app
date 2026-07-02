@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Глоссарий терминов A/B тестирования">
+    <title>Глоссарий | A/B Testing Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/glossary.css">
+</head>
+<body>
+    <!-- Navigation (same as index.html) -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-flask"></i>
+                <span>A/B Testing Academy</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#course" class="nav-link">Курс</a>
+                </li>
+                <li class="nav-item">
+                    <a href="glossary.html" class="nav-link active">Глоссарий</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">О проекте</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>📖 Глоссарий терминов</h1>
+            <p>Полный справочник терминов A/B тестирования и статистического анализа</p>
+            
+            <!-- Search -->
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Поиск термина...">
+            </div>
+            
+            <!-- Alphabet Filter -->
+            <div class="alphabet-filter">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="A">A</button>
+                <button class="filter-btn" data-filter="B">B</button>
+                <button class="filter-btn" data-filter="C">C</button>
+                <!-- Add more letters as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Glossary Content -->
+    <section class="glossary-section">
+        <div class="container">
+            <div class="glossary-grid" id="glossaryGrid">
+                
+                <!-- Term 1 -->
+                <div class="glossary-item" data-term="a/b test" data-letter="A">
+                    <div class="term-header">
+                        <h3>A/B Test (Сплит-тест)</h3>
+                        <button class="copy-btn" title="Copy link">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+                    <div class="term-category">Основы</div>
+                    <div class="term-content">
+                        <p>Метод сравнения двух версий продукта (контрольной A и тестовой B) для определения, какая из них показывает лучшие результаты по выбранным метрикам.</p>
+                        <div class="term-details">
+                            <div class="detail-item">
+                                <strong>Синонимы:</strong> Сплит-тест, A/B/n тест
+                            </div>
+                            <div class="detail-item">
+                                <strong>Пример:</strong> "Мы запустили A/B test для сравнения двух вариантов лендинга"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Term 2 -->
+                <div class="glossary-item" data-term="conversion rate" data-letter="C">
+                    <div class="term-header">
+                        <h3>Conversion Rate (Конверсия)</h3>
+                        <button class="copy-btn" title="Copy link">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+                    <div class="term-category">Метрики</div>
+                    <div class="term-content">
+                        <p>Процент пользователей, выполнивших целевое действие от общего числа посетителей.</p>
+                        <div class="formula">
+                            <strong>Формула:</strong> CR = (Conversions / Visitors) × 100%
+                        </div>
+                        <div class="term-details">
+                            <div class="detail-item">
+                                <strong>Пример:</strong> "Конверсия лендинга составила 5% (50 конверсий из 1000 посетителей)"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Term 3 -->
+                <div class="glossary-item" data-term="statistical significance" data-letter="S">
+                    <div class="term-header">
+                        <h3>Statistical Significance (Статистическая значимость)</h3>
+                        <button class="copy-btn" title="Copy link">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+                    <div class="term-category">Статистика</div>
+                    <div class="term-content">
+                        <p>Вероятность того, что наблюдаемые различия между группами не являются случайными. Обычно используется порог 95% (p-value < 0.05).</p>
+                        <div class="term-details">
+                            <div class="detail-item">
+                                <strong>Важно:</strong> Недостаточная статистическая значимость может привести к ложным выводам
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Term 4 -->
+                <div class="glossary-item" data-term="p-value" data-letter="P">
+                    <div class="term-header">
+                        <h3>P-value (P-значение)</h3>
+                        <button class="copy-btn" title="Copy link">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+                    <div class="term-category">Статистика</div>
+                    <div class="term-content">
+                        <p>Вероятность получить наблюдаемые или более экстремальные результаты при условии, что нулевая гипотеза верна.</p>
+                        <div class="term-details">
+                            <div class="detail-item">
+                                <strong>Интерпретация:</strong> p-value < 0.05 обычно считается статистически значимым
+                            </div>
+                            <div class="detail-item">
+                                <strong>Важно:</strong> P-value не показывает вероятность того, что гипотеза верна
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Term 5 -->
+                <div class="glossary-item" data-term="sample size" data-letter="S">
+                    <div class="term-header">
+                        <h3>Sample Size (Размер выборки)</h3>
+                        <button class="copy-btn" title="Copy link">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+                    <div class="term-category">Статистика</div>
+                    <div class="term-content">
+                        <p>Количество наблюдений или участников в эксперименте. Достаточный размер выборки критичен для получения статистически значимых результатов.</p>
+                        <div class="formula">
+                            <strong>Формула:</strong> n = (Z² × p × (1-p)) / E²
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more terms following the same structure -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>A/B Testing Academy</h3>
+                    <p>Образовательная платформа для специалистов</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 A/B Testing Academy. Made with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/glossary.js"></script>
+</body>
+</html>
